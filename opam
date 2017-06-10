@@ -11,5 +11,5 @@ install: [
 ]
 remove: ["rm" "-R" "%{lib}%/coq/user-contrib/Parametricity"]
 depends: [
-  "coq" {= "8.5pl1"}
+  "coq" {>= "8.5" & < "8.6"}
 ]
