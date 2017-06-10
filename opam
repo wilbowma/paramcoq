@@ -1,0 +1,15 @@
+opam-version: "1.2"
+homepage: "https://github.com/parametricity-coq/paramcoq"
+dev-repo: "https://github.com/parametricity-coq/paramcoq"
+bug-reports: "https://github.com/parametricity-coq/paramcoq/issues"
+license: "BSD"
+build: [
+  [make "-j%{jobs}%"]
+]
+install: [
+  [make "install"]
+]
+remove: ["rm" "-R" "%{lib}%/coq/user-contrib/Parametricity"]
+depends: [
+  "coq" {= "8.5pl1"}
+]
